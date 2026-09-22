@@ -8,8 +8,10 @@ namespace ZombieParty.Models
     {
         public virtual int Id { get; set; }
 
+        public virtual int Force { get; set; }
+
         [StringLength(20, MinimumLength = 5)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
         [StringLength(255)]
         public virtual string ShortDesc { get; set; }
