@@ -5,12 +5,12 @@ namespace ZombieParty.Models
 {
     public class HuntingLog
     {
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
         [StringLength(25, MinimumLength = 5)]
-        public string Title { get; set; }
+        public virtual string Title { get; set; }
         [StringLength(255)]
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
         [ValidateNever]
-        public List<Zombie> Zombies { get; set; }
+        public virtual List<Zombie> Zombies { get; set; }
     }
 }

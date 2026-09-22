@@ -4,10 +4,10 @@ namespace ZombieParty.ViewModels
 {
     public class ZombieTypeVM
     {
-        public ZombieType ZombieType { get; set; }
-        public List<Zombie> ZombiesList { get; set; } = new List<Zombie>();
-        public int ZombiesCount { get; set; }
-        public double PointsAverage { get; set; }
+        public virtual ZombieType ZombieType { get; set; }
+        public virtual List<Zombie> ZombiesList { get; set; } = new List<Zombie>();
+        public virtual int ZombiesCount { get; set; }
+        public virtual double PointsAverage { get; set; }
 
     }
 }

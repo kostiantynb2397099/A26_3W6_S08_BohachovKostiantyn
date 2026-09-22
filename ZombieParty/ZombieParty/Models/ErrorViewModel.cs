@@ -2,8 +2,8 @@ namespace ZombieParty.Models
 {
     public class ErrorViewModel
     {
-        public string? RequestId { get; set; }
+        public virtual string? RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public virtual bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
